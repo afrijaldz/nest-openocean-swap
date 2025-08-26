@@ -69,7 +69,7 @@ export class TokenService {
       });
 
       return {
-        usdt: usdtBalanceInWei.toString(),
+        usdt: formatUnits(usdtBalanceInWei, 6),
         idrx: formatUnits(idrxBalanceInWei, 2),
       };
     } catch (error) {
